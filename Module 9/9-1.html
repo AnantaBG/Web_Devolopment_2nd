@@ -3,9 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Responsive Flex</title>
+    <style>
+    .container{
+    display: flex;
+    }
+    .box{
+    background-color: aqua;
+    padding: 30px;
+    border-radius: 30px;
+    margin: 20px;
+    }
+    .container2{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    }
+    .item{
+    width: 200px;
+    height: 100px;
+    background-color: chartreuse;
+    border: 8px solid gold;
+    }
+    @media screen and (max-width:576px) {
+        .container{
+        flex-direction: column;
+        }
+    }
+    </style>
 </head>
 <body>
-    
+    <h2>Flexible Flex</h2>
+    <div class="container">
+    <div class="box">
+        <h3>1st box</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum hic tenetur consequuntur assumenda, reprehenderit officiis repellat! Quo, praesentium suscipit!</p>
+    </div>
+    <div class="box">
+        <h3>2nd box</h3>
+        <p>Mollitia culpa dignissimos ut voluptatibus quam deleniti enim, neque nesciunt atque beatae nostrum nemo itaque debitis consectetur accusantium? Laborum, eveniet!</p>
+    </div>
+    </div>
+    <div class="container2">
+        <div class="item">item = 01</div>
+        <div class="item">item = 02</div>
+        <div class="item">item = 03</div>
+        <div class="item">item = 04</div>
+        <div class="item">item = 05</div>
+        <div class="item">item = 06</div>
+        <div class="item">item = 07</div>
+        <div class="item">item = 08</div>
+        <div class="item">item = 09</div>
+        <div class="item">item = 10</div>
+    </div>
 </body>
 </html>
