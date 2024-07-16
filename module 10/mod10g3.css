@@ -3,7 +3,7 @@
 .work-sans-font {
     font-family: "Work Sans", sans-serif;
     font-optical-sizing: auto;
-    font-weight:700;
+    font-weight:400;
     font-style: normal;
 }
 /* Shared Styles */
@@ -13,6 +13,16 @@ display: flex;
 .text-gray{
 color: #424242;
 }
+.btn-primary{
+
+background-color: #ff900e;
+color: white;
+font-weight: 600;
+font-size: 1.22rem;
+padding: 20px 21px;
+border-radius: 8px;
+border: none;
+}
 /* Header styles */
 .bg-light{
 background-color: rgba(255, 144, 14, 0.1);
@@ -21,6 +31,11 @@ background-color: rgba(255, 144, 14, 0.1);
 /* Navbar Styles */
 .navbar{
 justify-content: space-between;
+align-items: center;
+}
+.brand{
+font-weight: 700;
+font-size: 2.8rem;
 }
 .nav-items{
 list-style: none;
@@ -34,4 +49,24 @@ font-weight: 500;
 .navbar, .banner{
 max-width: 1440px;
 margin: 0 auto;
+}
+/* banner styles */
+.banner-content{
+max-width: 850px;
+margin: 0 auto;
+text-align: center;
+margin-bottom: 50px;
+}
+.banner-title{
+font-size: 4rem;
+font-weight: 700;
+}
+.banner-image{
+max-width: 100%;
+}
+/* ResponsiveNess */
+@media screen and (max-width: 576px){
+    .navbar, .nav-link{
+    flex-direction: column;
+    }
 }
